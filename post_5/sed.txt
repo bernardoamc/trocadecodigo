@@ -1,0 +1,1 @@
+sed -re 's/(([0-9]+,){3})17/\125/g' test.csv > output.csv
