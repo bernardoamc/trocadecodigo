@@ -7,7 +7,7 @@ h2 = { seal: 5,
        test: {uncle_seal: 3 }, 
        answer: { nested: "damn", email: "hoho" } }
 
-def search_hash(h, search, results)
+def search_hash(h, search, results=[])
   results << h[search] if h.fetch(search, false)
 
   h.keys.each do |k| 
